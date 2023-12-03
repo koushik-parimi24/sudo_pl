@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #83A2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.panel {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #cfdfea;
+    width: 100%;
+    max-width: 100%;
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.pricing-header {
+    color: #828282;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.pricing-features {
+    margin: 50px 0px 35px;
+    color: rgb(24, 147, 200);
+}
+
+.pricing-features-item {
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: medium;
+    line-height: 1.2;
+    padding: 15px 0;
+    border-top: 1px solid #cfdfea;
+}
+
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #cfdfea;
+}
+
+.pricing-price {
+    color: rgb(6, 98, 204);
+    display: block;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.pricing-button {
+    background: rgb(255, 255, 255);
+    color: rgb(6, 98, 204);
+    border: rgb(6, 98, 204);
+    border-style: groove;
+    padding: 15px 35px;
+    margin: 25px 0;
+    font-size: 1em;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+.pricing-button:hover {
+    box-shadow: 0 0.5em 0.5em -0.3em rgb(56, 56, 236);
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+    background-color: #bdcdff;
+}
+
+.pricing-button.is-featured {
+    background-color: #325fe3;
+    color: #bdcdff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+    background-color: #1f50e3;
+    color: #bdcdff;
+}
+
+@media(min-width:900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        padding: 25px 50px;
+    }
+
+}
